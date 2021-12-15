@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JS-less navigation</title>
+  <header class="site-header">
+    <link rel="stylesheet" href="style/style.css">
+    <div class="site-identity">
+      <a href="#"><img src="images/tow_logo.jpg" alt="34/7 Tow services" class="user__image"/></a>
+      
+    </div>  
+  </header>
+  </head>
+  <body>
+    <div id="content">
+      <nav id="nav">
+        <a href="#page1">Login</a>
+        <a href="#page2">Our Services</a>
+        <a href="#page3">Tow Vehicle List</a>
+        <a href="#page4">Contact Us</a>
+        <a href="#page5">Feedback</a>
+      </nav>
+      <main>
+        <div id="page3" class="page">
+            <div class="container">
+                <div class="card">
+                  <div class="card__header">
+                    <img src="images/1.jpg" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+                    <span class="tag tag-blue">Medium</span>
+                    <h4>Hook and Tow Truck</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                  </div>
+                  <div class="card__footer">
+                    <div class="user">
+                      <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+                      <div class="user__info">
+                        <h5>Ramesh Bathardy</h5>
+                        <small>4 year Experience</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__header">
+                    <img src="images/2.jpg" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+                    <span class="tag tag-brown">Medium</span>
+                    <h4>Wheel Lift Tow Truck</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                  </div>
+                  <div class="card__footer">
+                    <div class="user">
+                      <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
+                      <div class="user__info">
+                        <h5>Rajnath Agrawak</h5>
+                        <small>5 year Experience</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__header">
+                    <img src="images/3.jpg" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+                    <span class="tag tag-red">Large</span>
+                    <h4>Boom Truck</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                  </div>
+                  <div class="card__footer">
+                    <div class="user">
+                      <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+                      <div class="user__info">
+                        <h5>Rahul Ramvedtha</h5>
+                        <small>2 years Experience</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+        </div>
+        <div id="page1" class="page">
+            <div class="login-page">
+                <div class="form">
+                  <form class="register-form">
+                    <input type="text" placeholder="name"/>
+                    <input type="password" placeholder="password"/>
+                    <input type="text" placeholder="email address"/>
+                    <button>create</button>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                  </form>
+                  <form class="login-form">
+                    <input type="text" placeholder="username"/>
+                    <input type="password" placeholder="password"/>
+                    <button>login</button>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                  </form>
+                </div>
+              </div>
+        </div>
+        <div id="page2" class="page">
+            <table>
+                <caption>Service Summary</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Service Name</th>
+                    <th scope="col">Tow Vehicle</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Service Name">Tow</td>
+                    <td data-label="Tow Vehicle">Hook and Chain Tow Trucks</td>
+                    <td data-label="Location">Bommasandra,Hebbal,HSR</td>
+                    <td data-label="Amount">4500</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Service Name">Tow and Repair</td>
+                    <td data-label="Tow Vehicle">Wheel-Lift Tow Truck</td>
+                    <td data-label="Location">Indiranagar,BTM Layout</td>
+                    <td data-label="Amount">5000</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Account">Heavy Tow</td>
+                    <td data-label="Due Date">Large Tow Truck</td>
+                    <td data-label="Amount">Kammanahalli,Hennur</td>
+                    <td data-label="Period">8050</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Acount">Small Tow</td>
+                    <td data-label="Due Date">Lite Tow Truck</td>
+                    <td data-label="Amount">Rajajinagar,SG Palya</td>
+                    <td data-label="Period">3500</td>
+                  </tr>
+                </tbody>
+              </table>
+                
+        </div>
+        <div id="page4" class="page">
+          <h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+        </div>
+        <div id="page5" class="page">
+        </div>
+        <div id="page2" class="page default">
+        </div>
+      </main>
+    </div>
+    <footer>
+      <centre>
+      <p>Important Messages:</p>
+      </centre>
+   
+  <marquee width="60%" direction="up" behavior="alternate"><marquee direction="right" behavior="alternate">Important Messages 1, Important Message 2</marquee></marquee>
+    </footer>
+    
+  </body>
+</html>

@@ -8,7 +8,7 @@
 
 
 <head>
-	<title>CandyCar - Repair, Towing, Tuning SinglePage and MultePage HTML template</title>
+	<title>AutomaniaCar - Repair, Towing, Tuning SinglePage and MultePage HTML template</title>
 	<meta charset="utf-8">
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 	<!--[if lt IE 9]>
@@ -115,9 +116,8 @@
 			<!-- template sections -->
 
 			<div class="header_absolute slide_absolute ds bs s-overlay">
-
 				<!--topline section visible only on small screens|-->
-				<section class="page_toplogo ds s-overlay s-pt-10 s-pb-5 s-py-lg-30">
+				<section class="page_toplogo ds s-overlay s-py-10 s-py-lg-30">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-12">
@@ -131,7 +131,7 @@
 										<div class="d-none d-lg-flex justify-content-center justify-content-lg-start">
 											<a href="index.html" class="logo">
 												<img src="images/logo.png" alt="">
-												<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+												<span class="logo-text fw-500">Automania<span class="fw-200">Car</span></span>
 											</a>
 										</div>
 									</div>
@@ -148,7 +148,7 @@
 											<div class="media-body">
 												<h6>Mail Us</h6>
 												<p class="fw-400">
-													Info@candycar.com
+													Info@automaniatowservices.com
 												</p>
 											</div>
 										</div>
@@ -159,7 +159,7 @@
 											<div class="media-body">
 												<h6>Location</h6>
 												<p class="fw-400">
-													Waukesha, WI 53186
+													Bangalore
 												</p>
 											</div>
 										</div>
@@ -170,12 +170,12 @@
 											<div class="media-body">
 												<h6>Phone</h6>
 												<p class="fw-400">
-													+1 23 456 78 90
+													+91 6635398832
 												</p>
 											</div>
 										</div>
 										<div class="d-none d-xl-block">
-											<a href="#" class="btn btn-small btn-outline-maincolor btn-appointment">Schedule Maintenance</a>
+											<a href="#" class="btn btn-small btn-outline-maincolor btn-appointment">Schedule Repair</a>
 										</div>
 									</div>
 								</div>
@@ -187,20 +187,19 @@
 
 
 				<!--eof topline-->
-
-				<!-- header with single Bootstrap column only for navigation and includes. Used with topline and toplogo sections. Menu toggler must be in toplogo section -->
-				<header class="page_header s-py-10 s-py-lg-0 ds ms s-overlay nav-bordered justify-nav-center">
-					<div class="container-fluid">
+				<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+				<header class="page_header s-py-10 s-py-lg-0 ds ms s-overlay nav-bordered">
+					<div class="container">
 						<div class="row align-items-center">
 							<div class="d-lg-none col-11">
 								<a href="index.html" class="logo">
 									<img src="images/logo.png" alt="">
-									<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+									<span class="logo-text fw-500">Automania<span class="fw-200">Car</span></span>
 								</a>
 							</div>
-							<div class="col-xl-12">
-
+							<div class="col-xl-12 col-lg-8 col-md-7 col-1">
 								<div class="nav-wrap">
+
 									<!-- main nav start -->
 									<nav class="top-nav">
 										<ul class="nav sf-menu">
@@ -706,19 +705,108 @@
 									</nav>
 									<!-- eof main nav -->
 
+									<!--hidding includes on small devices. They are duplicated in topline-->
+									<ul class="top-includes d-none d-xl-block">
+										<li>
+
+											<!--modal search-->
+											<span>
+												<a href="#" class="search_modal_button">
+													<i class="fa fa-search"></i>
+												</a>
+											</span>
+
+
+										</li>
+										<li>
+											<div class="dropdown shop-card-dropdown">
+												<a class="dropdown-toggle dropdown-shopping-cart" href="#" role="button" id="dropdown-shopping-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="ico-shopping-bag"></i>
+													<span class="badge bg-maincolor">0</span>
+												</a>
+												<div class="dropdown-menu dropdown-menu-right ls" aria-labelledby="dropdown-shopping-cart">
+													<div class="widget woocommerce widget_shopping_cart">
+														<h4>Shopping<span class="text-gradient">Cart</span></h4>
+														<div class="widget_shopping_cart_content">
+
+															<ul class="product_list_widget">
+																<li>
+																	<a href="shop-product-right.html">
+																		<img src="images/shop/05.jpg" alt="">
+																		<span class="product-title fw-500">shock absorber car</span>
+																	</a>
+																	<div class="d-flex justify-content-between shop-item">
+																		<p>Auto parts</p>
+																		<a href="#" class="remove" aria-label="Remove this item" data-product_id="73" data-product_sku=""><i class="fs-14 ico-trash color-main"></i></a>
+																	</div>
+																	<div class="d-flex align-items-center">
+																		<div class="woocommerce-Price-amount amount">
+																			<span class="woocommerce-Price-currencySymbol">$</span>55.00
+																		</div>
+																		<div class="quantity single">
+																			<input type="button" value="+" class="plus">
+																			<i class="fa fa-caret-up" aria-hidden="true"></i>
+																			<input type="number" class="input-text qty text" step="1" min="1" max="1000" name="quantity" value="1" title="Qty" size="4">
+																			<input type="button" value="-" class="minus">
+																			<i class="fa fa-caret-down" aria-hidden="true"></i>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<a href="shop-product-right.html">
+																		<img src="images/shop/01.jpg" alt="">
+																		<span class="product-title fw-500">Oil filter car</span>
+																	</a>
+																	<div class="d-flex justify-content-between shop-item">
+																		<p>Auto parts</p>
+																		<a href="#" class="remove" aria-label="Remove this item" data-product_id="73" data-product_sku=""><i class="fs-14 ico-trash color-main"></i></a>
+																	</div>
+																	<div class="d-flex align-items-center">
+																		<div class="woocommerce-Price-amount amount">
+																			<span class="woocommerce-Price-currencySymbol">$</span>55.00
+																		</div>
+																		<div class="quantity single">
+																			<input type="button" value="+" class="plus">
+																			<i class="fa fa-caret-up" aria-hidden="true"></i>
+																			<input type="number" class="input-text qty text" step="1" min="1" max="1000" name="quantity" value="1" title="Qty" size="4">
+																			<input type="button" value="-" class="minus">
+																			<i class="fa fa-caret-down" aria-hidden="true"></i>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+
+															<p class="woocommerce-mini-cart__total total">
+																<strong>Subtotal:</strong>
+																<span class="woocommerce-Price-amount amount fw-500">
+																	<span class="woocommerce-Price-currencySymbol">$</span>
+																	110.00
+																</span>
+															</p>
+
+															<p class="woocommerce-mini-cart__buttons buttons">
+																<a href="shop-cart.html" class="btn btn-small btn-maincolor button wc-forward">View cart</a>
+																<a href="shop-checkout.html" class="btn btn-small btn-outline-maincolor button checkout wc-forward">Checkout</a>
+															</p>
+														</div>
+													</div>
+
+
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#modalLoginForm"><i class="ico-user-alt"></i></a>
+										</li>
+									</ul>
 
 								</div>
-
 							</div>
 						</div>
 					</div>
-
 					<!-- header toggler -->
-
 					<span class="toggle_menu"><span></span></span>
-
 				</header>
-
 			</div>
 
 			<section class="page_slider">
@@ -726,42 +814,45 @@
 					<ul class="slides">
 						<li class="ds bs cover-image flex-slide">
 							<span class="flexslider-overlay"></span>
-							<img src="images/slide01.jpg" alt="">
+							<img src="images/slide02.jpg" alt="">
+							<video loop="" muted="" class="myVideo">
+								<source src="video/video.mp4" data-src="video/video.mp4" type="video/mp4">
+							</video>
 							<div class="container">
 								<div class="row">
 									<div class="col-md-12">
 										<div class="intro_layers_wrapper text-center text-xl-left">
 											<div class="intro_layers">
 												<div class="divider-20 d-none d-lg-block d-xl-none"></div>
-												<div class="intro_layer" data-animation="fadeInDown">
+												<div class="intro_layer" data-animation="fadeInRight">
 													<h2 class="text-uppercase intro_featured_word">
-														<span class="color-main">Full</span>
+														<span class="color-main">Roadside</span>
 														<span class="flex-gradient">
 															<span id="typed-strings">
-																<span>Collision</span>
-																<span>Tuning</span>
+																<span>Towing</span>
+																<span>Roadside Assistance</span>
 																<span>Repair</span>
 															</span>
 															<span id="typed"></span>
 														</span>
 													</h2>
 												</div>
-												<div class="intro_layer" data-animation="fadeInDown">
+												<div class="intro_layer" data-animation="fadeInRight">
 													<h2 class="text-uppercase intro_featured_word">
 														& Auto Body Services
 													</h2>
 												</div>
-												<div class="intro_layer" data-animation="fadeInDown">
+												<div class="intro_layer" data-animation="fadeInUp">
 													<ul class="list1">
-														<li>Complete Restoration Available</li>
-														<li>9 Foot Tall Spray Booth</li>
-														<li>Can Paint & Repair Sprinter Vans</li>
-														<li>We Work with Insurance Companies</li>
+														<li>2 wheeler and 3 Wheeler Towing</li>
+														<li>4 Wheeler Towing</li>
+														<li>All Types of tyre repair</li>
+														<li>All Across Bangalore</li>
 													</ul>
 												</div>
-												<div class="intro_layer" data-animation="fadeInDown">
+												<div class="intro_layer" data-animation="fadeInUp">
 													<div class="slide-button">
-														<a class="btn btn-small btn-maincolor" href="contact.html">Get Started</a>
+														<a class="btn btn-small btn-maincolor" href="#">Request a Service</a>
 													</div>
 												</div>
 											</div> <!-- eof .intro_layers -->
@@ -772,9 +863,9 @@
 							</div><!-- eof .container-fluid -->
 							<div class="ds social-flex d-none d-lg-block">
 								<p class="social-icons with-border">
-									<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
-									<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
-									<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
+									<span><a href="#" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
+									<span><a href="#" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
+									<span><a href="#" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
 								</p>
 							</div>
 						</li>
@@ -791,7 +882,7 @@
 														All Makes &
 													</h2>
 												</div>
-												<div class="intro_layer gradient-layer text-center" data-animation="fadeInDown">
+												<div class="intro_layer gradient-layer text-center" data-animation="fadeInRight">
 													<h2 class="text-uppercase">
 														<span class="text-layer">
 															<span class="color-main2">$20</span> Off Towing!
@@ -830,7 +921,7 @@
 														All Makes &
 													</h2>
 												</div>
-												<div class="intro_layer gradient-layer text-center" data-animation="fadeInDown">
+												<div class="intro_layer gradient-layer text-center" data-animation="fadeInRight">
 													<h2 class="text-uppercase">
 														<span class="text-layer">
 															<span class="color-main2">$20</span> Off Towing!
@@ -860,208 +951,33 @@
 				</div> <!-- eof flexslider -->
 			</section>
 
-			<section class="ds s-pt-60 s-pt-md-5 s-pb-0 s-pb-md-15 s-pb-lg-150 choose-us-section c-gutter-10 overflow-visible" id="choose-us">
+			<section class="ls s-py-60 s-py-lg-150">
 				<div class="container">
-					<div class="row plan-content c-mt-0 c-mt-lg-10 c-mt-xl-0">
-						<div class="col-xl-3 col-md-6">
-							<div class="pricing-plan plan1 cs">
-								<div class="plan-name">
-									<h5 class="text-uppercase">
-										Routine Maintenance
-									</h5>
+					<div class="row">
+						<div class="col-12">
+							<div class="row align-items-center text-center text-lg-left c-gutter-0">
+								<div class="col-lg-6">
+									<img src="images/team/07.jpg" alt="">
+									<div class="divider-40 d-block d-lg-none"></div>
 								</div>
-								<div class="plan-description">
-									<h6 class="fw-300 text-uppercase">
-										Start from
-									</h6>
-								</div>
-								<div class="price-wrap color-main2">
-									<span class="plan-price">76</span>
-									<span class="plan-sign">$</span>
-
-								</div>
-								<div class="plan-features">
-									<ul>
-										<li><i class="ico-check fs-12 fw-900"></i>6 x car wash</li>
-										<li><i class="ico-check fs-12 fw-900"></i>1 x lights check</li>
-										<li><i class="ico-check fs-12 fw-900"></i>1 x tires replacement</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6">
-							<div class="pricing-plan plan2 cs">
-								<div class="plan-name">
-									<h5 class="text-uppercase">
-										Electronics Diagnostic
-									</h5>
-								</div>
-								<div class="plan-description">
-									<h6 class="fw-300 text-uppercase">
-										Start from
-									</h6>
-								</div>
-								<div class="price-wrap color-main2">
-									<span class="plan-price">109</span>
-									<span class="plan-sign">$</span>
-
-								</div>
-								<div class="plan-features">
-									<ul>
-										<li><i class="ico-check fs-12 fw-900"></i>9 x car wash</li>
-										<li><i class="ico-check fs-12 fw-900"></i>2 x lights check</li>
-										<li><i class="ico-check fs-12 fw-900"></i>2 x tires replacement</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6">
-							<div class="pricing-plan plan3 cs">
-								<div class="plan-name">
-									<h5 class="text-uppercase">
-										Painting Works
-									</h5>
-								</div>
-								<div class="plan-description">
-									<h6 class="fw-300 text-uppercase">
-										Start from
-									</h6>
-								</div>
-								<div class="price-wrap color-main2">
-									<span class="plan-price">159</span>
-									<span class="plan-sign">$</span>
-
-								</div>
-								<div class="plan-features">
-									<ul>
-										<li><i class="ico-check fs-12 fw-900"></i>12 x car wash</li>
-										<li><i class="ico-check fs-12 fw-900"></i>3 x lights check</li>
-										<li><i class="ico-check fs-12 fw-900"></i>3 x tires replacement</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6">
-							<div class="pricing-plan plan4 cs">
-								<div class="plan-name">
-									<h5 class="text-uppercase">
-										Collision Repair
-									</h5>
-								</div>
-								<div class="plan-description">
-									<h6 class="fw-300 text-uppercase">
-										Start from
-									</h6>
-								</div>
-								<div class="price-wrap color-main2">
-									<span class="plan-price">199</span>
-									<span class="plan-sign">$</span>
-
-								</div>
-								<div class="plan-features">
-									<ul>
-										<li><i class="ico-check fs-12 fw-900"></i>15 x car wash</li>
-										<li><i class="ico-check fs-12 fw-900"></i>4 x lights check</li>
-										<li><i class="ico-check fs-12 fw-900"></i>4 x tires replacement</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="divider-145 d-none d-lg-block"></div>
-					</div>
-					<div class="row c-mb-45 c-mb-lg-0">
-						<div class="divider-40 d-block d-lg-none"></div>
-						<div class="offset-lg-2 col-lg-8 item-content text-center">
-							<h3 class="special-heading text-center">Why<span class="text-gradient">Choose</span> Us</h3>
-							<p class="fs-20 color-dark">The Car Repair Appointment</p>
-							<div class="divider-60 d-none d-lg-block"></div>
-							<p>Autospa Hand Wash is an eco-friendly, hand car wash and detailing service based in Portland. Our company was founded back in 2005 by a team of experts with more then 10 years of professional car wash experience.</p>
-							<p>Our goal is to provide our customers with the friendliest, most convenient hand car wash experience possible. We use the most modern and up-to-date.</p>
-							<div class="row text-left c-gutter-60">
-								<div class="divider-35"></div>
-								<div class="col-md-4">
-									<div class="icon-box text-center">
-										<div class="icon-styled color-main2 fs-40">
-											<i class="ico-mechanic"></i>
-										</div>
-										<p>
-											We offer multiple services at a great value
-										</p>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="icon-box text-center">
-										<div class="icon-styled color-main2 fs-40">
-											<i class="ico-car-wash"></i>
-										</div>
-										<p>
-											Multiple car wash locations throughout Portland
-										</p>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="icon-box text-center">
-										<div class="icon-styled color-main2 fs-40">
-											<i class="ico-painting"></i>
-										</div>
-										<p>
-											Biodegradable and eco-friendly products
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="divider-33 d-none d-lg-block"></div>
-							<div>
-								<a href="about.html" class="btn btn-small btn-maincolor">Read more</a> <span class="color-dark m-25">or</span> <a href="contact.html" class="btn btn-small btn-outline-maincolor">Get Started</a>
-							</div>
-						</div>
-					</div>
-					<div class="divider-50 d-none d-lg-block"></div>
-				</div>
-			</section>
-
-			<section class="s-pt-55 s-pb-0 s-pt-md-50 s-pt-lg-140 s-pb-lg-145 ls ms text-center steps-section" id="steps">
-				<div class="container">
-					<div class="col-12 text-center mb-55">
-						<h4>How<span class="text-gradient">We Work</span></h4>
-						<p class="fs-20 color-dark">The Car Repair Appointment</p>
-						<div class="divider-60 d-none d-xl-block"></div>
-					</div>
-					<div class="row c-mb-53 c-mb-lg-0">
-						<div class="col-12 col-lg-3">
-							<div class="steps">
-								<img src="images/step01.jpg" alt="">
-								<div class="step-content">
-									<h6 class="fw-700">Diagnostics</h6>
-									<p class="color-dark">Help extend the life of your major business investment</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-lg-3">
-							<div class="steps feature-step">
-								<img src="images/step02.jpg" alt="">
-								<div class="step-content">
-									<h6 class="fw-700">Make a Quote</h6>
-									<p class="color-dark">Regarding our technicians, it takes 30 years of ongoing training</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-lg-3">
-							<div class="steps">
-								<img src="images/step03.jpg" alt="">
-								<div class="step-content">
-									<h6 class="fw-700">Repair Your Car</h6>
-									<p class="color-dark">Convoy Auto Repair provides expert repairs, service</p>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-12 col-lg-3">
-							<div class="steps feature-step last-step">
-								<img src="images/step04.jpg" alt="">
-								<div class="step-content">
-									<h6 class="fw-700">Joy</h6>
-									<p class="color-dark">We are proud to have earned the reputation</p>
+								<div class="left-content col-lg-6 text-center text-lg-left">
+									<div class="divider-30 d-none d-lg-block"></div>
+									<h4 class="mt-0">Stephen S.<span class="text-gradient">Hendrick</span></h4>
+									<p class="fs-20 color-dark">The Car Repair Appointment Founder</p>
+									<div class="divider-60 d-none d-xl-block"></div>
+									<p>
+										Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue dui.
+									</p>
+									<p>
+										Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+									</p>
+									<p>
+										Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+									</p>
+									<div class="divider-60 d-none d-xl-block"></div>
+									<p class="signature text-center with-border overflow-hidden">
+										<img src="images/signature.png" alt="">
+									</p>
 								</div>
 							</div>
 						</div>
@@ -1069,7 +985,22 @@
 				</div>
 			</section>
 
-			<section class="ls s-pt-55 s-pt-md-50 s-pb-5 s-pt-lg-140 s-pb-lg-145 service-section text-center text-lg-left c-gutter-0" id="service">
+			<section class="ds bs s-py-60 s-pt-lg-145 s-pb-lg-150 call-to-action s-parallax s-overlay text-center text-lg-left" id="action">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-8 col-xl-7">
+							<h3 class="special-heading">$25 Off<span class="text-gradient">Any Repair</span> Or Service</h3>
+							<div class="divider-35 d-none d-md-block"></div>
+							<p class="big fw-400">$25 off repairs totaling $150 or more in labor expenses. One coupon per visit. Not valid with other offer or special. Coupon must be presented.</p>
+							<div class="divider-43 d-none d-md-block"></div>
+							<a href="#" class="btn btn-small btn-maincolor" data-toggle="modal" data-target="#modalLoginForm">Get Started</a>
+							<a href="#" class="btn btn-small btn-outline-maincolor">Schedule Repair</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls s-pt-55 s-pt-md-50 s-pb-5 s-pt-lg-140 s-pb-lg-145 service-section service2 text-center text-lg-left c-gutter-0" id="service">
 				<div class="container">
 					<div class=" col-12 mb-50 text-center">
 						<h4>Our<span class="text-gradient">Services</span></h4>
@@ -1121,7 +1052,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4 col-xl-6">
-							<img src="images/01.png" alt="">
+							<img src="images/02.png" alt="">
 						</div>
 						<div class="col-lg-4 col-xl-3">
 							<div class="media">
@@ -1170,503 +1101,144 @@
 				</div>
 			</section>
 
-			<section class="ds s-pt-55 s-pb-10 s-pt-lg-140 s-pb-lg-150 s-parallax testimonials-section" id="section_testimonials">
-				<div id="particles-js"></div> <!-- Animated background -->
-				<div class="container">
-					<div class=" col-12 mb-50 text-center">
-						<h4><span class="text-gradient">Testimonials</span> Slider</h4>
-						<p class="fs-20 color-dark">The Car Repair Appointment</p>
-						<div class="divider-60 d-none d-xl-block"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-
-							<div class="testimonials-slider owl-carousel" data-autoplay="false" data-loop="true" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="true" data-dots="false">
-								<div class="quote-item">
-									<div class="quote-image">
-										<img src="images/team/testimonials_01.jpg" alt="">
-									</div>
-									<div class="quote-mark">
-										<img src="images/quote.png" alt="">
-									</div>
-									<p>
-										<em class="big fw-400">
-											Meatloaf laborum velit kielbasa. Drumstick sirloin lorem chicken swine biltong in short ribs duis bresaola. Veniam meatloaf cow incididunt in bacon kevin in pork belly ball tip duis ipsum. Ribeye et aliquip strip steak dolore in anim.
-										</em>
-									</p>
-									<h6 class="quote-name fw-700">
-										Brett Connor
-									</h6>
-									<p class="color-grey">
-										AutoDoc Manager
-									</p>
-								</div>
-								<div class="quote-item">
-									<div class="quote-image">
-										<img src="images/team/testimonials_01.jpg" alt="">
-									</div>
-									<div class="quote-mark">
-										<img src="images/quote.png" alt="">
-									</div>
-									<p>
-										<em class="big fw-400">
-											Meatloaf laborum velit kielbasa. Drumstick sirloin lorem chicken swine biltong in short ribs duis bresaola. Veniam meatloaf cow incididunt in bacon kevin in pork belly ball tip duis ipsum. Ribeye et aliquip strip steak dolore in anim.
-										</em>
-									</p>
-									<h6 class="quote-name fw-700">
-										Brett Connor
-									</h6>
-									<p class="color-grey">
-										AutoDoc Manager
-									</p>
-								</div>
-								<div class="quote-item">
-									<div class="quote-image">
-										<img src="images/team/testimonials_01.jpg" alt="">
-									</div>
-									<div class="quote-mark">
-										<img src="images/quote.png" alt="">
-									</div>
-									<p>
-										<em class="big fw-400">
-											Meatloaf laborum velit kielbasa. Drumstick sirloin lorem chicken swine biltong in short ribs duis bresaola. Veniam meatloaf cow incididunt in bacon kevin in pork belly ball tip duis ipsum. Ribeye et aliquip strip steak dolore in anim.
-										</em>
-									</p>
-									<h6 class="quote-name fw-700">
-										Brett Connor
-									</h6>
-									<p class="color-grey">
-										AutoDoc Manager
-									</p>
-								</div>
-
-							</div><!-- .testimonials-slider -->
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="ls s-pt-55 s-pb-30 s-pt-lg-145 s-pb-lg-120" id="team">
-				<div class="container">
-					<div class="col-12 mb-50">
-						<h3 class="special-heading text-center">Meet Our<span class="text-gradient">Team</span></h3>
-						<p class="fs-20 color-dark">The Car Repair Appointment</p>
-						<div class="divider-60 d-none d-lg-block"></div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="owl-carousel" data-autoplay="false" data-loop="true" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2" data-nav="false" data-dots="false" data-margin="60">
-								<div class="vertical-item content-padding text-center overflow-hidden">
-									<div class="item-media">
-										<img src="images/team/01.jpg" alt="">
-										<div class="content-hover team-btn">
-											<a href="team-single.html" class="btn btn-small btn-maincolor">Mail me</a>
-										</div>
-									</div>
-									<div class="item-content">
-										<h6 class="team-name fw-700">
-											<a href="team-single.html">Melvin C. Williams</a>
-										</h6>
-										<p>
-											AutoDoc Manager
-										</p>
-										<p class="social-icons with-border">
-											<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
-											<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
-											<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="vertical-item content-padding text-center overflow-hidden">
-									<div class="item-media">
-										<img src="images/team/02.jpg" alt="">
-										<div class="content-hover team-btn">
-											<a href="team-single.html" class="btn btn-small btn-maincolor">Mail me</a>
-										</div>
-									</div>
-									<div class="item-content">
-										<h6 class="team-name fw-700">
-											<a href="team-single.html">Kurt A. Schwartz</a>
-										</h6>
-										<p>
-											AutoDoc Manager
-										</p>
-										<p class="social-icons with-border">
-											<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
-											<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
-											<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="vertical-item content-padding text-center overflow-hidden">
-									<div class="item-media">
-										<img src="images/team/03.jpg" alt="">
-										<div class="content-hover team-btn">
-											<a href="team-single.html" class="btn btn-small btn-maincolor">Mail me</a>
-										</div>
-									</div>
-									<div class="item-content">
-										<h6 class="team-name fw-700">
-											<a href="team-single.html">Trevor L. Puckett</a>
-										</h6>
-										<p>
-											AutoDoc Manager
-										</p>
-										<p class="social-icons with-border">
-											<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
-											<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
-											<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="vertical-item content-padding text-center overflow-hidden">
-									<div class="item-media">
-										<img src="images/team/04.jpg" alt="">
-										<div class="content-hover team-btn">
-											<a href="team-single.html" class="btn btn-small btn-maincolor">Mail me</a>
-										</div>
-									</div>
-									<div class="item-content">
-										<h6 class="team-name fw-700">
-											<a href="team-single.html">Darryl L. Cordoba</a>
-										</h6>
-										<p>
-											AutoDoc Manager
-										</p>
-										<p class="social-icons with-border">
-											<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
-											<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
-											<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="vertical-item content-padding text-center overflow-hidden">
-									<div class="item-media">
-										<img src="images/team/05.jpg" alt="">
-										<div class="content-hover team-btn">
-											<a href="team-single.html" class="btn btn-small btn-maincolor">Mail me</a>
-										</div>
-									</div>
-									<div class="item-content">
-										<h6 class="team-name fw-700">
-											<a href="team-single.html">Aaron M. Lee</a>
-										</h6>
-										<p>
-											AutoDoc Manager
-										</p>
-										<p class="social-icons with-border">
-											<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
-											<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
-											<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
-										</p>
-									</div>
-								</div>
-								<div class="vertical-item content-padding text-center overflow-hidden">
-									<div class="item-media">
-										<img src="images/team/06.jpg" alt="">
-										<div class="content-hover team-btn">
-											<a href="team-single.html" class="btn btn-small btn-maincolor">Mail me</a>
-										</div>
-									</div>
-									<div class="item-content">
-										<h6 class="team-name fw-700">
-											<a href="team-single.html">Ronald E. Conway</a>
-										</h6>
-										<p>
-											AutoDoc Manager
-										</p>
-										<p class="social-icons with-border">
-											<span><a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a></span>
-											<span><a href="https://telegram.org/" class="fa fa-paper-plane border-icon rounded-icon" title="telegram"></a></span>
-											<span><a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a></span>
-										</p>
-									</div>
-								</div>
-							</div><!-- .team-carousel -->
-						</div>
-						<div class="divider-2"></div>
-					</div>
-				</div>
-			</section>
-
-			<section class="s-pt-55 s-pb-0 s-pt-lg-145 s-pb-lg-150 ls ms blog-section c-gutter-60" id="blog">
+			<section class="ls ms s-pt-60 s-pb-45 s-pt-lg-145 s-pb-lg-140 s-pb-xl-150 c-gutter-10">
 				<div class="container">
 					<div class="col-12 mb-55">
-						<h3 class="special-heading text-center">Latest<span class="text-gradient">Blog</span> Posts</h3>
+						<h3 class="special-heading text-center">Our<span class="text-gradient">Pricing</span> Plans</h3>
 						<p class="fs-20 color-dark">The Car Repair Appointment</p>
-						<div class="divider-64 d-none d-lg-block"></div>
+						<div class="divider-65 d-none d-lg-block"></div>
 					</div>
-					<div class="row justify-content-center c-mb-60 c-mb-lg-0">
-						<div class="col-lg-4 col-md-6">
-							<article class="vertical-item text-center content-padding post type-post status-publish format-standard has-post-thumbnail bordered ls">
-								<div class="tagcloud">
-									<a href="blog-right.html" class="tag-cloud-link">
-										<span>
-											Repair
-										</span>
-									</a>
+					<div class="row c-mb-lg-10 c-mb-xl-0">
+						<div class="col-xl-3 col-md-6">
+
+							<div class="pricing-plan plan1 cs">
+								<div class="plan-name">
+									<h5 class="text-uppercase">
+										Routine Maintenance
+									</h5>
 								</div>
-								<div class="item-media post-thumbnail">
-									<img src="images/blog/10.jpg" alt="">
-									<div class="media-links">
-										<a class="abs-link" title="" href="blog-left.html"></a>
-									</div>
-								</div><!-- .post-thumbnail -->
-								<div class="item-content">
-									<header class="entry-header">
-										<h4 class="entry-title">
-											<a href="blog-left.html" rel="bookmark">
-												Life is either a great adverture
-											</a>
-										</h4>
-									</header><!-- .entry-header -->
-									<div class="entry-content">
-										<p>Drumstick sirloin lorem chicken swine biltong</p>
-									</div><!-- .entry-content -->
-									<div class="entry-meta">
-										<span class="byline links-grey d-flex justify-content-between">
-											<span class="posted-on">
-												<a href="#">
-													<i class="fs-14 color-main ico-clock-alt"></i>
-													2 min ago
-												</a>
-											</span>
-											<span class="span">
-												<span class="like-count">
-													<a href="#comments">
-														<i class="fs-14 fw-900 color-main fa fa-heart-o"></i>
-														25
-													</a>
-												</span>
-												<span class="comment-count">
-													<a href="#comments">
-														<i class="fs-14 color-main ico-comments-alt"></i>
-														23
-													</a>
-												</span>
-											</span>
-										</span>
-									</div>
-								</div><!-- .item-content -->
-							</article><!-- #post-## -->
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<article class="vertical-item text-center content-padding post type-post status-publish format-standard has-post-thumbnail bordered ls">
-								<div class="tagcloud">
-									<a href="blog-right.html" class="tag-cloud-link">
-										<span>
-											Repair
-										</span>
-									</a>
+								<div class="plan-description">
+									<h6 class="fw-300 text-uppercase">
+										Start from
+									</h6>
 								</div>
-								<div class="item-media post-thumbnail">
-									<img src="images/blog/11.jpg" alt="">
-									<div class="media-links">
-										<a class="abs-link" title="" href="blog-left.html"></a>
-									</div>
-								</div><!-- .post-thumbnail -->
-								<div class="item-content">
-									<header class="entry-header">
-										<h4 class="entry-title">
-											<a href="blog-left.html" rel="bookmark">
-												Life is either a great adverture
-											</a>
-										</h4>
-									</header><!-- .entry-header -->
-									<div class="entry-content">
-										<p>Drumstick sirloin lorem chicken swine biltong</p>
-									</div><!-- .entry-content -->
-									<div class="entry-meta">
-										<span class="byline links-grey d-flex justify-content-between">
-											<span class="posted-on">
-												<a href="#">
-													<i class="fs-14 color-main ico-clock-alt"></i>
-													2 min ago
-												</a>
-											</span>
-											<span class="span">
-												<span class="like-count">
-													<a href="#comments">
-														<i class="fs-14 fw-900 color-main fa fa-heart-o"></i>
-														25
-													</a>
-												</span>
-												<span class="comment-count">
-													<a href="#comments">
-														<i class="fs-14 color-main ico-comments-alt"></i>
-														23
-													</a>
-												</span>
-											</span>
-										</span>
-									</div>
-								</div><!-- .item-content -->
-							</article><!-- #post-## -->
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<article class="vertical-item text-center content-padding post type-post status-publish format-standard has-post-thumbnail bordered ls">
-								<div class="tagcloud">
-									<a href="blog-right.html" class="tag-cloud-link">
-										<span>
-											Repair
-										</span>
-									</a>
+								<div class="price-wrap color-main2">
+									<span class="plan-price">76</span>
+									<span class="plan-sign">$</span>
+
 								</div>
-								<div class="item-media post-thumbnail">
-									<img src="images/blog/09.jpg" alt="">
-									<div class="media-links">
-										<a class="abs-link" title="" href="blog-left.html"></a>
-									</div>
-								</div><!-- .post-thumbnail -->
-								<div class="item-content">
-									<header class="entry-header">
-										<h4 class="entry-title">
-											<a href="blog-left.html" rel="bookmark">
-												Life is either a great adverture
-											</a>
-										</h4>
-									</header><!-- .entry-header -->
-									<div class="entry-content">
-										<p>Drumstick sirloin lorem chicken swine biltong</p>
-									</div><!-- .entry-content -->
-									<div class="entry-meta">
-										<span class="byline links-grey d-flex justify-content-between">
-											<span class="posted-on">
-												<a href="#">
-													<i class="fs-14 color-main ico-clock-alt"></i>
-													2 min ago
-												</a>
-											</span>
-											<span class="span">
-												<span class="like-count">
-													<a href="#comments">
-														<i class="fs-14 fw-900 color-main fa fa-heart-o"></i>
-														25
-													</a>
-												</span>
-												<span class="comment-count">
-													<a href="#comments">
-														<i class="fs-14 color-main ico-comments-alt"></i>
-														23
-													</a>
-												</span>
-											</span>
-										</span>
-									</div>
-								</div><!-- .item-content -->
-							</article><!-- #post-## -->
+								<div class="plan-features">
+									<ul>
+										<li><i class="ico-check fs-12 fw-900"></i>6 x car wash</li>
+										<li><i class="ico-check fs-12 fw-900"></i>1 x lights check</li>
+										<li><i class="ico-check fs-12 fw-900"></i>1 x tires replacement</li>
+										<li><i class="ico-check fs-12 fw-900"></i>1 x computer diagnose</li>
+									</ul>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-small btn-maincolor2">Get Started</a>
+								</div>
+							</div>
 						</div>
+						<div class="col-xl-3 col-md-6">
+
+							<div class="pricing-plan plan2 cs">
+								<div class="plan-name">
+									<h5 class="text-uppercase">
+										Electronics Diagnostic
+									</h5>
+								</div>
+								<div class="plan-description">
+									<h6 class="fw-300 text-uppercase">
+										Start from
+									</h6>
+								</div>
+								<div class="price-wrap color-main2">
+									<span class="plan-price">109</span>
+									<span class="plan-sign">$</span>
+
+								</div>
+								<div class="plan-features">
+									<ul>
+										<li><i class="ico-check fs-12 fw-900"></i>9 x car wash</li>
+										<li><i class="ico-check fs-12 fw-900"></i>2 x lights check</li>
+										<li><i class="ico-check fs-12 fw-900"></i>2 x tires replacement</li>
+										<li><i class="ico-check fs-12 fw-900"></i>2 x computer diagnose</li>
+									</ul>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-small btn-maincolor2">Get Started</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+
+							<div class="pricing-plan plan3 cs">
+								<div class="plan-name">
+									<h5 class="text-uppercase">
+										Painting Works
+									</h5>
+								</div>
+								<div class="plan-description">
+									<h6 class="fw-300 text-uppercase">
+										Start from
+									</h6>
+								</div>
+								<div class="price-wrap color-main2">
+									<span class="plan-price">159</span>
+									<span class="plan-sign">$</span>
+
+								</div>
+								<div class="plan-features">
+									<ul>
+										<li><i class="ico-check fs-12 fw-900"></i>12 x car wash</li>
+										<li><i class="ico-check fs-12 fw-900"></i>3 x lights check</li>
+										<li><i class="ico-check fs-12 fw-900"></i>3 x tires replacement</li>
+										<li><i class="ico-check fs-12 fw-900"></i>3 x computer diagnose</li>
+									</ul>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-small btn-maincolor2">Get Started</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+
+							<div class="pricing-plan plan4 cs">
+								<div class="plan-name">
+									<h5 class="text-uppercase">
+										Collision Repair
+									</h5>
+								</div>
+								<div class="plan-description">
+									<h6 class="fw-300 text-uppercase">
+										Start from
+									</h6>
+								</div>
+								<div class="price-wrap color-main2">
+									<span class="plan-price">199</span>
+									<span class="plan-sign">$</span>
+
+								</div>
+								<div class="plan-features">
+									<ul>
+										<li><i class="ico-check fs-12 fw-900"></i>15 x car wash</li>
+										<li><i class="ico-check fs-12 fw-900"></i>4 x lights check</li>
+										<li><i class="ico-check fs-12 fw-900"></i>4 x tires replacement</li>
+										<li><i class="ico-check fs-12 fw-900"></i>4 x computer diagnose</li>
+									</ul>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-small btn-maincolor2">Get Started</a>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</section>
 
-			<section class="ls s-pt-60 s-pb-0 s-pt-md-55 s-pb-md-45 s-pt-lg-145 s-pb-lg-115 c-mb-55 c-mb-md-0 text-center text-md-left side-section">
-				<div class="divider-5 d-none d-mb-block"></div>
-				<div class="cover-image s-cover-left"></div><!-- half image background element -->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<img src="images/side-image01.jpg" alt="">
-						</div>
-						<div class="col-md-6 animate" data-animation="moveFromRight">
-							<div class="item-content content-left-padding">
-								<h3 class="special-heading">Get<span class="text-gradient">Appointment</span></h3>
-								<p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren. Vis no intellegebat voluptatibus, vim an partem admodum copiosae, has ei mutat maluisset comprehensam.</p>
-								<ul class="list1">
-									<li>Fully Responsive</li>
-									<li>Retina Ready</li>
-									<li>Extremely Customizable</li>
-									<li>WP 4.1+ Ready</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="ls s-pt-3 s-pb-0 s-pt-md-55 s-pb-md-45 s-pt-lg-145 s-pb-lg-115 c-mb-55 c-mb-md-0 text-center text-md-left side-section" id="contacts">
-				<div class="divider-5 d-none d-mb-block"></div>
-				<div class="cover-image s-cover-right"></div><!-- half image background element -->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 order-1 order-md-2">
-							<img src="images/side-image02.jpg" alt="">
-						</div>
-						<div class="col-md-6 order-2 order-md-1 animate" data-animation="moveFromLeft">
-							<div class="item-content content-right-padding">
-								<h3 class="special-heading">About<span class="text-gradient">Service</span> Center</h3>
-								<p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren. Vis no intellegebat voluptatibus, vim an partem admodum copiosae, has ei mutat maluisset comprehensam.</p>
-								<ul class="list1">
-									<li>Fully Responsive</li>
-									<li>Retina Ready</li>
-									<li>Extremely Customizable</li>
-									<li>WP 4.1+ Ready</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider-3 d-block d-mb-none"></div>
-			</section>
-
-			<section class="ls ms contact-section text-center text-md-left">
-				<div class="row align-items-center c-gutter-0">
-					<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
-						<div class="animate page_map animated scaleAppear" data-animation="scaleAppear">
-							<div class="marker">
-								<div class="marker-address">sydney, australia, Liverpool street, 2</div>
-								<div class="marker-title">Map Marker</div>
-								<div class="marker-description">
-									<p class="strong"><strong>Sydney, Australia, Liverpool Street, 2</strong>.</p>
-									<p>
-										Lorem ipsum dolor sit amet,
-										consectetur adipisicing elit. Aliquid cumque,
-										deserunt dolor.
-									</p>
-								</div>
-								<img class="marker-icon" src="images/map_marker_icon.png" alt="">P
-							</div>
-							<!-- .marker -->
-						</div>
-						<!--.col-* -->
-					</div>
-					<div class="col-xl-3 col-md-6 col-10 animate" data-animation="moveFromRight">
-						<div class="divider-55 d-md-none"></div>
-						<div class="item-content content-left-padding">
-							<h3 class="special-heading">Find<span class="text-gradient">Us</span></h3>
-							<p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren.</p>
-							<h6 class="fw-700">New Yourk</h6>
-							<div class="media side-icon-box">
-								<div class="icon-styled color-main">
-									<i class="fa fa-map-marker"></i>
-								</div>
-								<p class="media-body">2688 Simpson Avenue<br> Harrisburg, PA 17109 </p>
-							</div>
-							<div class="media side-icon-box">
-								<div class="icon-styled color-main">
-									<i class="fa fa-phone"></i>
-								</div>
-
-								<p class="media-body">+1 234 56 78</p>
-							</div>
-							<div class="media side-icon-box">
-								<div class="icon-styled color-main fs-14">
-									<i class="fa fa-envelope"></i>
-								</div>
-								<p class="media-body links-grey">
-									<a href="mailto:">info@candycar.com</a>
-								</p>
-							</div>
-							<a href="contact.html" class="btn btn-small btn-outline-maincolor">Contact us</a>
-						</div>
-						<div class="divider-60 d-md-none"></div>
-					</div>
-					<!--.col-* -->
-				</div>
-			</section>
-
-			<section class="ls s-py-55 s-py-lg-75" id="partners">
+			<section class="ls s-py-55 s-py-lg-75">
 				<div class="container-fluid">
 					<div class="divider-3"></div>
 					<div class="row">
@@ -1708,6 +1280,61 @@
 				</div>
 			</section>
 
+			<section class="ls ms contact-section text-center text-md-left">
+				<div class="row align-items-center c-gutter-0">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12">
+						<div class="animate page_map animated scaleAppear" data-animation="scaleAppear">
+							<div class="marker">
+								<div class="marker-address">sydney, australia, Liverpool street, 2</div>
+								<div class="marker-title">Fourth Marker</div>
+								<div class="marker-description">
+									<p><strong>Sydney, Australia, Liverpool Street, 2</strong>.<br>
+										Lorem ipsum dolor sit amet,
+										consectetur adipisicing elit. Aliquid cumque,
+										deserunt dolor.
+									</p>
+								</div>
+								<img class="marker-icon" src="images/map_marker_icon.png" alt="">P
+							</div>
+							<!-- .marker -->
+						</div>
+						<!--.col-* -->
+					</div>
+					<div class="col-xl-3 col-md-6 col-10">
+						<div class="divider-55 d-md-none"></div>
+						<div class="item-content content-left-padding">
+							<h3 class="special-heading">Find<span class="text-gradient">Us</span></h3>
+							<p>Pro inimicus sapientem an, ad cibo velit mollis mei, ne vim adhuc gubergren.</p>
+							<h6 class="fw-700">New Yourk</h6>
+							<div class="media side-icon-box">
+								<div class="icon-styled color-main">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<p class="media-body">2688 Simpson Avenue<br> Harrisburg, PA 17109 </p>
+							</div>
+							<div class="media side-icon-box">
+								<div class="icon-styled color-main">
+									<i class="fa fa-phone"></i>
+								</div>
+
+								<p class="media-body">+1 234 56 78</p>
+							</div>
+							<div class="media side-icon-box">
+								<div class="icon-styled color-main fs-14">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<p class="media-body links-grey">
+									<a href="#">info@Automaniacar.com</a>
+								</p>
+							</div>
+							<a href="#" class="btn btn-small btn-outline-maincolor">Contact us</a>
+						</div>
+						<div class="divider-60 d-md-none"></div>
+					</div>
+					<!--.col-* -->
+				</div>
+			</section>
+
 			<footer class="page_footer text-center text-md-left ds ms s-pt-65 s-pt-lg-125 s-pb-lg-35 c-gutter-40 main-footer">
 				<div class="container">
 					<div class="row">
@@ -1718,7 +1345,7 @@
 							<div class="widget widget_icons_list">
 								<a href="index.html" class="logo">
 									<img src="images/logo.png" alt="">
-									<span class="logo-text fw-500">Candy<span class="fw-200">Car</span></span>
+									<span class="logo-text fw-500">Automania<span class="fw-200">Car</span></span>
 								</a>
 								<div class="media side-icon-box">
 									<div class="icon-styled color-main">
@@ -1738,7 +1365,7 @@
 										<i class="fa fa-envelope"></i>
 									</div>
 									<p class="media-body color-grey">
-										<a href="mailto:">info@candycar.com</a>
+										<a href="mailto:">info@Automaniacar.com</a>
 									</p>
 								</div>
 							</div>

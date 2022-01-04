@@ -855,6 +855,28 @@
 														<a class="btn btn-small btn-maincolor" href="#">Request a Service</a>
 													</div>
 												</div>
+												<div class="intro_layer" data-animation="fadeInUp">
+													<canvas id="myCanvas" width="300" height="50"
+style="border:px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<div class="slide-button">
+														
+													</div>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(50,0,200,200);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+												</div>
 											</div> <!-- eof .intro_layers -->
 
 										</div> <!-- eof .intro_layers_wrapper -->

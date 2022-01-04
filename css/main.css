@@ -8543,6 +8543,7 @@ body.boxed {
 	color: #06182d;
 }
 
+
 /*color background buttons*/
 .btn-maincolor,
 .btn-maincolor2,
@@ -8638,7 +8639,11 @@ body.boxed {
 .btn-outline-grey {
 	border-color: #f4f6f9;
 }
+.btn:visited{
 
+	background-color: red;
+	
+  }
 .corner {
 	background-color: transparent !important;
 	height: 0;

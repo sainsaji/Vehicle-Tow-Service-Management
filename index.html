@@ -30,6 +30,11 @@
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
+	<audio id="myAudio">
+		<source src="horse.ogg" type="audio/ogg">
+		<source src="ring/ring.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
 
 </head>
 
@@ -856,26 +861,11 @@
 													</div>
 												</div>
 												<div class="intro_layer" data-animation="fadeInUp">
-													<canvas id="myCanvas" width="300" height="50"
-style="border:px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
 <div class="slide-button">
 														
 													</div>
 
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
 
-// Create gradient
-var grd = ctx.createLinearGradient(50,0,200,200);
-grd.addColorStop(0,"red");
-grd.addColorStop(1,"white");
-
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-</script>
 												</div>
 											</div> <!-- eof .intro_layers -->
 
@@ -913,7 +903,7 @@ ctx.fillRect(10,10,150,80);
 												</div>
 												<div class="intro_layer text-right" data-animation="fadeInLeftBig">
 													<h2 class="text-uppercase intro_after_featured_word">
-														Models Welcome
+														Exclusive Offer
 													</h2>
 												</div>
 											</div> <!-- eof .intro_layers -->
@@ -1016,7 +1006,19 @@ ctx.fillRect(10,10,150,80);
 							<p class="big fw-400">₹25 off repairs totaling ₹150 or more in labor expenses. One coupon per visit. Not valid with other offer or special. Coupon must be presented.</p>
 							<div class="divider-43 d-none d-md-block"></div>
 							<a href="#" class="btn btn-small btn-maincolor" data-toggle="modal" data-target="#modalLoginForm">Get Started</a>
-							<a href="#" class="btn btn-small btn-outline-maincolor">Schedule Repair</a>
+							<a class="btn btn-3" onclick="playAudio()" style="
+							flex: 1 1 auto;
+							margin: 10px;
+							padding: 10px;
+							text-align: center;
+							
+							transition: 0.5s;
+							background-size: 200% auto;
+							color: white;
+							box-shadow: 0 0 20px #eee;
+  							border-radius: 10px;
+  							background-image: linear-gradient(to right, #fc7120 0%, #b35b43 51%, #d37721 100%);">Contact Support</a> 
+							<a href="#" class="btn btn-small btn-maincolor" data-toggle="modal" data-target="#modalLoginForm">Schedule Repair</a>
 						</div>
 					</div>
 				</div>
@@ -1493,7 +1495,17 @@ ctx.fillRect(10,10,150,80);
 
 		</div><!-- eof #box_wrapper -->
 	</div><!-- eof #canvas -->
-
+	<script>
+		var x = document.getElementById("myAudio"); 
+		
+		function playAudio() { 
+		  x.play(); 
+		} 
+		
+		function pauseAudio() { 
+		  x.pause(); 
+		} 
+		</script>
 
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>

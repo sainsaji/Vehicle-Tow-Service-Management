@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+  <cd>
+    <title>4 Wheeler Towing</title>
+    <availability>All across Bangalore</availability>
+    <state>Karnataka</state>
+    <fee>7500</fee>
+    <offer>10%</offer>
+  </cd>
+  <cd>
+    <title>2 Wheeler Towing</title>
+    <availability>All across Bangalore</availability>
+    <state>Karnataka</state>
+    <fee>5500</fee>
+    <offer>20%</offer>
+  </cd>
+<cd>
+    <title>Large Vehicle Towing</title>
+    <availability>Bangalore Central</availability>
+    <state>Karnataka</state>
+    <fee>15500</fee>
+    <offer>10%</offer>
+  </cd>
+<cd>
+    <title>Container Towing</title>
+    <availability>Bangalore Urban/Rural</availability>
+    <state>Karnataka</state>
+    <fee>20500</fee>
+    <offer>5%</offer>
+  </cd>
+<cd>
+    <title>Roadside Repair</title>
+    <availability>All across Bangalore</availability>
+    <state>Karnataka</state>
+    <fee>2000</fee>
+    <offer>12%</offer>
+  </cd>
+<cd>
+    <title>Roadside Driver Assistance</title>
+    <availability>Bangalore Central</availability>
+    <state>Karnataka</state>
+    <fee>5000</fee>
+    <offer>25%</offer>
+  </cd>
+<cd>
+    <title>Roadside Petrol Filling</title>
+    <availability>All Across Bangalore</availability>
+    <state>Karnataka</state>
+    <fee>1000</fee>
+    <offer>5%</offer>
+  </cd>
+<cd>
+    <title>Parking Protection</title>
+    <availability>Bangalore Central</availability>
+    <state>Karnataka</state>
+    <fee>20000</fee>
+    <offer>30%</offer>
+  </cd>
+</services>
+

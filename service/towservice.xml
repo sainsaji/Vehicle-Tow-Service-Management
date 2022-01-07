@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="service.xsl"?>
+<towservice  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="service.xsd">
+    <services>
+        <service id='1'>
+            <name> 2 wheeler towing </name>
+            <fee>5000</fee>
+            <offer>15</offer>
+            <location>Central Bangalore</location>
+        </service>
+
+        <service id='2'>
+            <name> 3 wheeler towing </name>
+            <fee>7500</fee>
+            <offer>4</offer>
+            <location>All across Bangalore</location>
+        </service>
+
+        <service id='3'>
+            <name> 4 wheeler towing </name>
+            <fee>8000</fee>
+            <offer>9</offer>
+            <location>Central Bangalore</location>
+        </service>
+
+        <service id='4'>
+            <name> Large Vehicle Towing </name>
+            <fee>15000</fee>
+            <offer>8</offer>
+            <location>Bangalore Urban</location>
+        </service>
+        <service id='5'>
+            <name> Large Vehicle Towing </name>
+            <fee>15000</fee>
+            <offer>8</offer>
+            <location>Bangalore Urban</location>
+        </service>
+        <service id='6'>
+            <name> Container Vehicle Towing </name>
+            <fee>35000</fee>
+            <offer>20</offer>
+            <location>Bangalore Central</location>
+        </service>
+        <service id='7'>
+            <name>Roadside Assistance</name>
+            <fee>3000</fee>
+            <offer>11</offer>
+            <location>Bangalore Urban</location>
+        </service>
+        <service id='8'>
+            <name>Roadside Repair</name>
+            <fee>2000</fee>
+            <offer>9</offer>
+            <location>Bangalore Central</location>
+        </service>
+
+    </services>
+
+</towservice>
